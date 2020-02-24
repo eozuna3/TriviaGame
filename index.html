@@ -14,7 +14,6 @@
 </head>
 
 <body>
-  <!------------------------------  Header  ----------------------------------->
   <div class="container-fluid">
     <div class="row mt-5 text-white">
       <div class="col-md-1"></div>
@@ -22,7 +21,50 @@
         <div class="row pt-5">
           <div class="col-md-1"></div>
           <div class="col-md-10">
-            <div class="row"><h1 class="text-center mx-auto">Medical Trivia Game</h1></div>
+            <div class="row pb-5">
+              <h1 class="text-center mx-auto">Medical Trivia Game</h1>
+            </div>
+            <div class="row pb-5" id="start">
+              <button type="button" class="btn btn-primary btn-lg mx-auto px-5">
+                <h2>Start</h2>
+              </button>
+            </div>
+            <div class="row pb-5 text-center" id="counter">
+              <div class="col-md-2"></div>
+              <div class="col-md-8">
+                <h2>Time Remaining: </h2>
+                <h2 id="timer">120</h2>
+                <h2> Seconds</h2>
+              </div>
+              <div class="col-md-2"></div>
+            </div>
+
+            <!--------------------------------  Questions  ---------------------------->
+            <div class="row">
+              <div class="container" id="questionsContainer">
+                <div class="row pb-5">
+                  <div class="col-md-12 text-center">
+                    <h3>What is average resting heart rate for an adult male?</h3>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="heartrate" id="50-70bpm" value="incorrect">
+                      <label class="form-check-label" for="heartrate">50-70 bpm</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="heartrate" id="80-100bpm" value="incorrect">
+                      <label class="form-check-label" for="heartrate">80-100 bpm</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="heartrate" id="60-100bpm" value="correct">
+                      <label class="form-check-label" for="heartrate">60-100 bpm</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="heartrate" id="70-90bpm" value="incorrect">
+                      <label class="form-check-label" for="heartrate">70-90 bpm</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="col-md-1"></div>
         </div>
@@ -43,7 +85,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-  <script src="assets/javascript/game.js"></script>
+  <script src="assets/javascript/app.js"></script>
 </body>
 
 </html>

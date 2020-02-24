@@ -3,3 +3,7 @@ body{
   background: url("../images/medical-backgrounds-png-1600_800.png");
   font-size: 16px;
 }
+
+#counter h2{
+ display: inline;
+}
