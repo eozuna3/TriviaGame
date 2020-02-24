@@ -1,11 +1,12 @@
 $(document).ready(function () {
-
+  
     $("#questions").hide();
     $("#completed").hide();
     $("#counter").hide();
     $("#done").on("click", done);
     $("#start").on("click", start);
     
+
   /*----------------------------Variables--------------------------------------------*/
   var counterInterval;
   var counter;
@@ -42,6 +43,13 @@ $(document).ready(function () {
       done();
     }
   }
+
+  //Submit Function
+  $("#submitBtn").on("click", function() {
+    var test = $("input[name='heartrate']:checked").val();
+    console.log(test);
+  });
+  
 
   //End of javascript
 });
