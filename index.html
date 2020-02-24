@@ -18,60 +18,305 @@
     <div class="row mt-5 text-white">
       <div class="col-md-1"></div>
       <div class="col-md-10 bg-secondary">
-        <div class="row pt-5">
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
-            <div class="row pb-5">
-              <h1 class="text-center mx-auto">Medical Trivia Game</h1>
-            </div>
-            <div class="row pb-5" id="start">
-              <button type="button" class="btn btn-primary btn-lg mx-auto px-5">
-                <h2>Start</h2>
-              </button>
-            </div>
-            <div class="row pb-5 text-center" id="counter">
-              <div class="col-md-2"></div>
-              <div class="col-md-8">
-                <h2>Time Remaining: </h2>
-                <h2 id="timer">120</h2>
-                <h2> Seconds</h2>
-              </div>
-              <div class="col-md-2"></div>
-            </div>
 
-            <!--------------------------------  Questions  ---------------------------->
-            <div class="row">
-              <div class="container" id="questionsContainer">
-                <div class="row pb-5">
-                  <div class="col-md-12 text-center">
-                    <h3>What is average resting heart rate for an adult male?</h3>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="heartrate" id="50-70bpm" value="incorrect">
-                      <label class="form-check-label" for="heartrate">50-70 bpm</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="heartrate" id="80-100bpm" value="incorrect">
-                      <label class="form-check-label" for="heartrate">80-100 bpm</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="heartrate" id="60-100bpm" value="correct">
-                      <label class="form-check-label" for="heartrate">60-100 bpm</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="heartrate" id="70-90bpm" value="incorrect">
-                      <label class="form-check-label" for="heartrate">70-90 bpm</label>
-                    </div>
-                  </div>
+        <!------------------  Header/Start/Timer ------------------------->
+        <div class="container" id="header">
+          <div class="row pt-5">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+              <div class="row pb-5">
+                <h1 class="text-center mx-auto">Medical Trivia Game</h1>
+              </div>
+              <div class="row pb-5" id="start">
+                <button type="button" class="btn btn-primary btn-lg mx-auto px-5">
+                  <h2>Start</h2>
+                </button>
+              </div>
+              <div class="row pb-5 text-center" id="counter">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                  <h2>Time Remaining: </h2>
+                  <h2 id="timer">120</h2>
+                  <h2> Seconds</h2>
                 </div>
+                <div class="col-md-2"></div>
+              </div>
+            </div>
+            <div class="col-md-1"></div>
+          </div>
+        </div>
+        <!--------------------------------  Questions  ---------------------------->
+        <div class="container" id="questions">
+          <!--question 1-->
+          <div class="row pb-5">
+            <div class="col-md-12 text-center">
+              <h3>What is average resting heart rate for an adult male?</h3>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="heartrate" id="50-70bpm" value="false">
+                <label class="form-check-label" for="heartrate">50-70 bpm</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="heartrate" id="80-100bpm" value="false">
+                <label class="form-check-label" for="heartrate">80-100 bpm</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="heartrate" id="60-100bpm" value="true">
+                <label class="form-check-label" for="heartrate">60-100 bpm</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="heartrate" id="70-90bpm" value="false">
+                <label class="form-check-label" for="heartrate">70-90 bpm</label>
               </div>
             </div>
           </div>
-          <div class="col-md-1"></div>
+
+          <!--question 2-->
+          <div class="row pb-5">
+            <div class="col-md-12 text-center">
+              <h3>How many chambers does the heart have?</h3>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="1chamber" value="false">
+                <label class="form-check-label" for="chambers">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="2chamber" value="false">
+                <label class="form-check-label" for="chambers">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="3chamber" value="false">
+                <label class="form-check-label" for="chambers">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="4chamber" value="true">
+                <label class="form-check-label" for="chambers">4</label>
+              </div>
+            </div>
+          </div>
+          
+          <!--question 3-->
+          <div class="row pb-5">
+            <div class="col-md-12 text-center">
+              <h3>How many chambers does the heart have?</h3>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="1chamber" value="false">
+                <label class="form-check-label" for="chambers">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="2chamber" value="false">
+                <label class="form-check-label" for="chambers">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="3chamber" value="false">
+                <label class="form-check-label" for="chambers">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="4chamber" value="true">
+                <label class="form-check-label" for="chambers">4</label>
+              </div>
+            </div>
+          </div>
+
+          <!--question 4-->
+          <div class="row pb-5">
+            <div class="col-md-12 text-center">
+              <h3>How many chambers does the heart have?</h3>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="1chamber" value="false">
+                <label class="form-check-label" for="chambers">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="2chamber" value="false">
+                <label class="form-check-label" for="chambers">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="3chamber" value="false">
+                <label class="form-check-label" for="chambers">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="4chamber" value="true">
+                <label class="form-check-label" for="chambers">4</label>
+              </div>
+            </div>
+          </div>
+
+          <!--question 5-->
+          <div class="row pb-5">
+            <div class="col-md-12 text-center">
+              <h3>How many chambers does the heart have?</h3>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="1chamber" value="false">
+                <label class="form-check-label" for="chambers">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="2chamber" value="false">
+                <label class="form-check-label" for="chambers">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="3chamber" value="false">
+                <label class="form-check-label" for="chambers">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="4chamber" value="true">
+                <label class="form-check-label" for="chambers">4</label>
+              </div>
+            </div>
+          </div>  
+
+          <!--question 6-->
+          <div class="row pb-5">
+            <div class="col-md-12 text-center">
+              <h3>How many chambers does the heart have?</h3>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="1chamber" value="false">
+                <label class="form-check-label" for="chambers">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="2chamber" value="false">
+                <label class="form-check-label" for="chambers">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="3chamber" value="false">
+                <label class="form-check-label" for="chambers">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="4chamber" value="true">
+                <label class="form-check-label" for="chambers">4</label>
+              </div>
+            </div>
+          </div>  
+
+          <!--question 7-->
+          <div class="row pb-5">
+            <div class="col-md-12 text-center">
+              <h3>How many chambers does the heart have?</h3>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="1chamber" value="false">
+                <label class="form-check-label" for="chambers">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="2chamber" value="false">
+                <label class="form-check-label" for="chambers">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="3chamber" value="false">
+                <label class="form-check-label" for="chambers">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="4chamber" value="true">
+                <label class="form-check-label" for="chambers">4</label>
+              </div>
+            </div>
+          </div>  
+
+          <!--question 8-->
+          <div class="row pb-5">
+            <div class="col-md-12 text-center">
+              <h3>How many chambers does the heart have?</h3>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="1chamber" value="false">
+                <label class="form-check-label" for="chambers">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="2chamber" value="false">
+                <label class="form-check-label" for="chambers">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="3chamber" value="false">
+                <label class="form-check-label" for="chambers">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="4chamber" value="true">
+                <label class="form-check-label" for="chambers">4</label>
+              </div>
+            </div>
+          </div>  
+
+          <!--question 9-->
+          <div class="row pb-5">
+            <div class="col-md-12 text-center">
+              <h3>How many chambers does the heart have?</h3>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="1chamber" value="false">
+                <label class="form-check-label" for="chambers">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="2chamber" value="false">
+                <label class="form-check-label" for="chambers">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="3chamber" value="false">
+                <label class="form-check-label" for="chambers">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="4chamber" value="true">
+                <label class="form-check-label" for="chambers">4</label>
+              </div>
+            </div>
+          </div>  
+
+          <!--question 10-->
+          <div class="row pb-5">
+            <div class="col-md-12 text-center">
+              <h3>How many chambers does the heart have?</h3>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="1chamber" value="false">
+                <label class="form-check-label" for="chambers">1</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="2chamber" value="false">
+                <label class="form-check-label" for="chambers">2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="3chamber" value="false">
+                <label class="form-check-label" for="chambers">3</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="chambers" id="4chamber" value="true">
+                <label class="form-check-label" for="chambers">4</label>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-------------------  Completed ------------------------->
+        <div class="container" id="completed">
+          <div class="row pb-3">
+            <div class="col-md-3"></div>
+            <div class="col-md-6"> 
+              <h2 class="text-center">All Done!!!</h2>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+          <div class="row pb-2">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center"> 
+              <span>Correct Answers: </span>
+              <span id="numberCorrect">0</span>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+          <div class="row pb-2">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center"> 
+              <span>Incorrect Answers: </span>
+              <span id="numberIncorrect">0</span>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+          <div class="row pb-2">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 text-center"> 
+              <span>Unanswered: </span>
+              <span id="numberUnanswered">0</span>
+            </div>
+            <div class="col-md-3"></div>
+          </div>
+        </div>
+
       </div>
       <div class="col-md-1"></div>
     </div>
   </div>
+
 
 
 

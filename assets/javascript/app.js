@@ -1,12 +1,20 @@
 $(document).ready(function () {
 
-  $("#questionsContainer").hide(); 
+  $("#questions").hide();
+  $("#completed").hide();
+  $("#counter").hide();
   /*----------------------------Variables--------------------------------------------*/
   // Creating variables for use in javascript
 
-
+  /*---------------------------Functions--------------------------------------------*/
+  
+  //Start Function
   $("#start").on("click", function(){
     $(this).hide();
-    $("#questionsContainer").show();
+    $("#questions").show();
+    $("#completed").show();
+    $("#counter").show();
   });
+
+
 });

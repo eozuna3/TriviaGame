@@ -7,3 +7,7 @@ body{
 #counter h2{
  display: inline;
 }
+
+#completed span{
+  font-size: 24px;
+}
