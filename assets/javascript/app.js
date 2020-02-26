@@ -23,8 +23,9 @@ $(document).ready(function () {
     $("#questions").show();
     $("#counter").show();
     $("#completed").hide();
+    $("#music").attr("src", "assets/music/E.R..mp3")
 
-    counter = 30;
+    counter = 120;
     $("#timer").text(counter);
     counterInterval = setInterval(decrement, 1000);
   };
